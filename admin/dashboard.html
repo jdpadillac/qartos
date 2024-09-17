@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="js/dashdoard.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <strong>MENSAJES <br>DE CONTACTO</strong>
+                            </div>
+                            <div class="card-footer">
+                                <p id="contac_mes">Del mes: </p>
+                                <p id="contac_all">Del año: </p>
+                            </div>
+                            <a class="btn stretched-link mt-3" href="#" id="btn_contactos"> Listar </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <strong>PROPIETARIOS REGISTRADOS</strong>
+                            </div>
+                            <div class="card-footer">
+                                <p id="propietario_mes">Del mes: </p>
+                                <p id="propietario_all">Del año: </p>
+                            </div>
+                            <a class="btn stretched-link mt-3" href="#" id="btn_list_propietarios"> Listar </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <strong>PROPIEDADES REGISTRADAS</strong>
+                            </div>
+                            <div class="card-footer">
+                                <p id="propiedades_mes">Del mes: </p>
+                                <p id="propiedades_all">Del año: </p>
+                            </div>
+                            <a class="btn stretched-link mt-3" href="#" id="btn_list_propiedades"> Listar </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <strong>USUARIOS REGISTRADOS</strong>
+                            </div>
+                            <div class="card-footer">
+                                <p id="usuarios_mes">Del mes: </p>
+                                <p id="usuarios_all">Del año: </p>
+                            </div>
+                            <a class="btn stretched-link mt-3" href="#" id="btn_list_usuarios"> Listar </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <strong>RESERVAS REALIZADAS</strong>
+                            </div>
+                            <div class="card-footer">
+                                <p id="reservas_mes">Del mes: </p>
+                                <p id="reservas_all">Del año: </p>
+                            </div>
+                            <a class="btn stretched-link mt-3" href="#" id="btn_list_reservas"> Listar </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="container-fluid" id="div_mvto"></div>
+
+
+
+             <!-- Ventana modal para mensajes emergentes -->
+          <button class="hidden" data-bs-target="#exampleModal" data-bs-toggle="modal" id="btn_ventana_modal" type="button" hidden></button>
+          <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <img alt="logo" src="../img/logo.jpg" width="150" />
+                          <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                      </div>
+                      <!--Aca pongo el mensaje para mostrar -->
+                      <div class="modal-body" id="cuerpo"></div>
+    
+                      <div class="modal-footer">
+                          <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cerrar</button>
+                      </div>
+                  </div>
+                </div>
+          </div>
+        
+          
+        </div>  <!-- final del container-->
+    </body>
+</html>

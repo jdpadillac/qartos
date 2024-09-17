@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>qartos</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="icon" type="image/png" href="../favicon.ico" sizes="256x256">
+       
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+       <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet" />
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">	</script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+      
+    </head>
+    <body>
+      <div class="container mt-5" id="contenedor">
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="card-img-top bt-5 mb-5">
+                  <img src="../img/logo.jpg" class="img-responsive" style="width: 100%;">
+                </div>
+                <div class="card-header">
+                    <h3>ACCESO</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <p>Usuario</p>
+                        <input id="txt_usuario" class="form-control" type="text" value="jdpadillac@gmail.com">
+                        <p>Clave</p>
+                        <input id="txt_clave" class="form-control" type="password" placeholder="Digite su contraseña" value="123">
+                        <br>
+                        <button class="btn btn-primary form-control" id="btn_entrar">Entrar</button>
+                        
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4"></div>
+      </div>
+      
+      
+      
+      
+        
+      <!-- Ventana modal para mensajes emergentes -->
+          <button class="hidden" data-bs-target="#exampleModal" data-bs-toggle="modal" id="btn_ventana_modal" type="button" hidden></button>
+      <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <img alt="logo" src="../img/logo.jpg" width="150" />
+                      <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                  </div>
+                  <!--Aca pongo el mensaje para mostrar -->
+                  <div class="modal-body" id="cuerpo"></div>
+
+                  <div class="modal-footer">
+                      <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Cerrar</button>
+                  </div>
+              </div>
+            </div>
+      </div>
+        
+        
+    </body>
+</html>
